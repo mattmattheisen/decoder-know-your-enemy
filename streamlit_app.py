@@ -224,19 +224,7 @@ def overview_page():
         for icon_title, description in intelligence_features:
             st.markdown(f"**{icon_title}** - {description}")
     
-    # Warning section
-    st.markdown("""
-    <div style="background: #f8d7da; 
-                border: 1px solid #f5c6cb; 
-                border-radius: 8px; 
-                padding: 1.5rem; 
-                margin: 2rem 0;">
-        <p style="margin: 0; color: #721c24;">
-            <strong>⚠️ Warning:</strong> What you're about to see isn't theory - 
-            it's the actual training materials used by major firms to extract maximum revenue from customers.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+
     
     # Quick action buttons
     st.subheader("🚀 Start Your Intelligence Briefing")
