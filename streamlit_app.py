@@ -55,14 +55,14 @@ TRAINING_BOOKS = {
         "title": "Customer Centered Selling",
         "author": "Robert Miller & Stephen Heiman",
         "status": "EXPOSED",
-        "description": "The book they made me study for weeks at TIAA-CREF. Learn the exact manipulation tactics disguised as 'customer care.'",
+        "description": "Mandatory reading at major financial firms. Learn the exact manipulation tactics disguised as 'customer care.'",
         "tactics": [
             "The 'Pain Funnel' - Exploiting Customer Fears",
             "Objection Reframing - Turning 'No' into 'Maybe'",
             "The Assumptive Close - Acting Like You've Already Decided",
             "Creating False Scarcity - 'This Offer Expires Today'"
         ],
-        "insider_quote": "This was mandatory reading at TIAA-CREF. We had to role-play these techniques for weeks. What they call 'customer-centered' is actually sales-centered with a friendly mask."
+        "insider_quote": "This was mandatory reading at major financial firms. Advisors have to role-play these techniques for weeks. What they call 'customer-centered' is actually sales-centered with a friendly mask."
     },
     "spin_selling": {
         "title": "SPIN Selling",
@@ -224,7 +224,7 @@ def overview_page():
         for icon_title, description in intelligence_features:
             st.markdown(f"**{icon_title}** - {description}")
     
-    # Insider warning section
+    # Warning section
     st.markdown("""
     <div style="background: #f8d7da; 
                 border: 1px solid #f5c6cb; 
@@ -232,8 +232,7 @@ def overview_page():
                 padding: 1.5rem; 
                 margin: 2rem 0;">
         <p style="margin: 0; color: #721c24;">
-            <strong>⚠️ Insider Warning:</strong> As a former advisor at TIAA-CREF, I was forced to memorize 
-            these scripts and practice these manipulation techniques. What you're about to see isn't theory - 
+            <strong>⚠️ Warning:</strong> What you're about to see isn't theory - 
             it's the actual training materials used by major firms to extract maximum revenue from customers.
         </p>
     </div>
@@ -270,7 +269,7 @@ def overview_page():
     with col2:
         st.metric("Manipulation Tactics Exposed", "25+", "Growing")
     with col3:
-        st.metric("Years Inside the Industry", "3", "At TIAA-CREF")
+        st.metric("Years Inside the Industry", "3", "Major Firms")
     with col4:
         st.metric("Scripts Memorized", "Dozens", "😤")
     
@@ -320,7 +319,7 @@ def customer_centered_selling_page():
     st.markdown(f'''
     <div style="background: #f8f9fa; border-left: 4px solid #34495e; padding: 1rem; margin: 1rem 0; font-style: italic; border-radius: 5px;">
         "{book['insider_quote']}"
-        <br><strong>— Former TIAA-CREF Advisor</strong>
+        <br><strong>— Former Financial Advisor</strong>
     </div>
     ''', unsafe_allow_html=True)
     
